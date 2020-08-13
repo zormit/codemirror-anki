@@ -1,0 +1,906 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "9d2079aa-dda9-11ea-a331-3c970e00903e",
+    "deck_config_uuid": "92b5e68e-cb99-11ea-9c59-8c705abd0bf4",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "92b5e68e-cb99-11ea-9c59-8c705abd0bf4",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    30,
+                    1440
+                ],
+                "leechAction": 1,
+                "leechFails": 4,
+                "minInt": 1,
+                "mult": 0.2
+            },
+            "maxTaken": 180,
+            "name": "default",
+            "new": {
+                "bury": true,
+                "delays": [
+                    10,
+                    1440
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    3,
+                    4
+                ],
+                "order": 0,
+                "perDay": 20,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": true,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1,
+                "maxIvl": 365,
+                "minSpace": 1,
+                "perDay": 9999
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [
+        "89abeaaa571d4ff786a271d0472c3705-ao-1-A.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-1-Q.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-2-A.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-2-Q.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-3-A.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-3-Q.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-4-A.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-4-Q.svg",
+        "89abeaaa571d4ff786a271d0472c3705-ao-O.svg",
+        "tmpzv4x8pev.png"
+    ],
+    "mid": "1347896474574",
+    "name": "active::Software Engineering::codemirror",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Info",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "ContextCue",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic (and reversed card)",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        3
+                    ]
+                ],
+                [
+                    1,
+                    "any",
+                    [
+                        1,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Forward",
+                    "ord": 0,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
+                },
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Backwards",
+                    "ord": 1,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Back}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.info {\n  max-width: 30em;\n  margin: 0.75em auto;\n  color: #333;\n  font-size: 90%;\n  font-style: italic;\n}\n",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Info",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "ContextCue",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic (no reverse)",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0,
+                        3
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n{{#Info}}<div class=\"info\">{{Info}}</div>{{/Info}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Forward",
+                    "ord": 0,
+                    "qfmt": "{{#ContextCue}}{{ContextCue}}: {{/ContextCue}}{{Front}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;\n}\n.small {\nfont-size: 14px;\n}",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Text",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Extra",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Cloze",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br><br>\n<div class=\"small\">{{Extra}}</div>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Cloze",
+                    "ord": 0,
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ],
+            "type": 1,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "9d21939e-dda9-11ea-a331-3c970e00903e",
+            "css": "/* GENERAL CARD STYLE */\n.card {\n  font-family: \"Helvetica LT Std\", Helvetica, Arial, Sans;\n  font-size: 150%;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n/* OCCLUSION CSS START - don't edit this */\n#io-overlay {\n  position:absolute;\n  top:0;\n  width:100%;\n  z-index:3\n}\n\n#io-original {\n  position:relative;\n  top:0;\n  width:100%;\n  z-index:2;\n  visibility: hidden;\n}\n\n#io-wrapper {\n  position:relative;\n  width: 100%;\n}\n/* OCCLUSION CSS END */\n\n/* OTHER STYLES */\n#io-header{\n  font-size: 1.1em;\n  margin-bottom: 0.2em;\n}\n\n#io-footer{\n  max-width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0.8em;\n  font-style: italic;\n}\n\n#io-extra-wrapper{\n  /* the wrapper is needed to center the\n  left-aligned blocks below it */\n  width: 80%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 0.5em;\n}\n\n#io-extra{\n  text-align:center;\n  display: inline-block;\n}\n\n.io-extra-entry{\n  margin-top: 0.8em;\n  font-size: 0.9em;\n  text-align:left;\n}\n\n.io-field-descr{\n  margin-bottom: 0.2em;\n  font-weight: bold;\n  font-size: 1em;\n}\n\n#io-revl-btn {\n  font-size: 0.5em;\n}\n\n/* ADJUSTMENTS FOR MOBILE DEVICES */\n\n.mobile .card, .mobile #content {\n  font-size: 120%;\n  margin: 0;\n}\n\n.mobile #io-extra-wrapper {\n  width: 95%;\n}\n\n.mobile #io-revl-btn {\n  font-size: 0.8em;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "ID (hidden)",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Header",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Image",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Question Mask",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Footer",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Remarks",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Sources",
+                    "ord": 6,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra 1",
+                    "ord": 7,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra 2",
+                    "ord": 8,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Answer Mask",
+                    "ord": 9,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Original Mask",
+                    "ord": 10,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Image Occlusion Enhanced",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        2
+                    ]
+                ]
+            ],
+            "sortf": 1,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{#Image}}\n<div id=\"io-header\">{{Header}}</div>\n<div id=\"io-wrapper\">\n  <div id=\"io-overlay\">{{Answer Mask}}</div>\n  <div id=\"io-original\">{{Image}}</div>\n</div>\n{{#Footer}}<div id=\"io-footer\">{{Footer}}</div>{{/Footer}}\n<button id=\"io-revl-btn\" onclick=\"toggle();\">Toggle Masks</button>\n<div id=\"io-extra-wrapper\">\n  <div id=\"io-extra\">\n    {{#Remarks}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Remarks</div>{{Remarks}}\n      </div>\n    {{/Remarks}}\n    {{#Sources}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Sources</div>{{Sources}}\n      </div>\n    {{/Sources}}\n    {{#Extra 1}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Extra 1</div>{{Extra 1}}\n      </div>\n    {{/Extra 1}}\n    {{#Extra 2}}\n      <div class=\"io-extra-entry\">\n        <div class=\"io-field-descr\">Extra 2</div>{{Extra 2}}\n      </div>\n    {{/Extra 2}}\n  </div>\n</div>\n\n<script>\n// Toggle answer mask on clicking the image\nvar toggle = function() {\n  var amask = document.getElementById('io-overlay');\n  if (amask.style.display === 'block' || amask.style.display === '')\n    amask.style.display = 'none';\n  else\n    amask.style.display = 'block'\n}\n\n// Prevent original image from loading before mask\naFade = 50, qFade = 0;\nvar mask = document.querySelector('#io-overlay>img');\nfunction loaded() {\n    var original = document.querySelector('#io-original');\n    original.style.visibility = \"visible\";\n}\nif (mask === null || mask.complete) {\n    loaded();\n} else {\n    mask.addEventListener('load', loaded);\n}\n</script>\n{{/Image}}\n",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "IO Card",
+                    "ord": 0,
+                    "qfmt": "{{#Image}}\n<div id=\"io-header\">{{Header}}</div>\n<div id=\"io-wrapper\">\n  <div id=\"io-overlay\">{{Question Mask}}</div>\n  <div id=\"io-original\">{{Image}}</div>\n</div>\n<div id=\"io-footer\">{{Footer}}</div>\n\n<script>\n// Prevent original image from loading before mask\naFade = 50, qFade = 0;\nvar mask = document.querySelector('#io-overlay>img');\nfunction loaded() {\n    var original = document.querySelector('#io-original');\n    original.style.visibility = \"visible\";\n}\nif (mask === null || mask.complete) {\n    loaded();\n} else {\n    mask.addEventListener('load', loaded);\n}\n</script>\n{{/Image}}\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Text type",
+                "<div>stores documents<br></div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Fn$-X|E)37",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "<div>documents datatype</div>",
+                "immutable tree-shaped representation",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "bwU8$1$vj&",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "text type features:<div>1. {{c1::efficient indexing}}<div>2. {{c2::immutable updates}}</div><div>3. {{c3::iterating parts of the document}}</div></div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "l}^BEX`Jua",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EditorState",
+                "<div>a persistent (immutable) data structure</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "e.*/Kv%_qJ",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Transaction",
+                "a change to the editor state",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "vjyj;|}1;",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "how many transactions does a user action typically create?",
+                "a single transaction",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "DJ*G+HT<IH",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "a transaction may...:<div>1. {{c1::contain any number of document changes}}</div><div>2. {{c2::change the selection}}</div><div>3. {{c3::have other effects}}</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Q34P/Tg9&&",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EditorView",
+                "represents the editor's user interface",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "z!*!6ryt:c",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "Functional Core, Imperative Shell",
+                "architecture pattern underlying the design of codemirror",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "F9=QahZCJz",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::\"functional core\"}} parts of codemirror:<div>{{c2::document and state data structures}}</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "wny&Rb)U3_",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::\"imperative shell\"}} parts of codemirror:<div>{{c2::view component and command interface}}</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "og~W.3M/(N",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "what follows from \"functional core imperative shell\" for the state? (2 things)",
+                "- old state value stays intact<div>- directly changing state value will break things</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "yKCH;Vth&X",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "view.dispatch",
+                "takes transaction =&gt; updates editor state",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ir;jd%yn^x",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "exceptions of \"state of the view is entirely determined by EditorState value",
+                "composition<div>drag-drop handling</div>",
+                "[suspended because I don't understand it right now]",
+                ""
+            ],
+            "flags": 0,
+            "guid": "e?LBJ]vv-<",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "89abeaaa571d4ff786a271d0472c3705-ao-1",
+                "codemirror data flow",
+                "<img src=\"tmpzv4x8pev.png\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-1-Q.svg\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-1-A.svg\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "I^En[BS~4}",
+            "note_model_uuid": "9d21939e-dda9-11ea-a331-3c970e00903e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "89abeaaa571d4ff786a271d0472c3705-ao-2",
+                "codemirror data flow",
+                "<img src=\"tmpzv4x8pev.png\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-2-Q.svg\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-2-A.svg\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "y.v9t.`uYT",
+            "note_model_uuid": "9d21939e-dda9-11ea-a331-3c970e00903e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "89abeaaa571d4ff786a271d0472c3705-ao-3",
+                "codemirror data flow",
+                "<img src=\"tmpzv4x8pev.png\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-3-Q.svg\" />",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-3-A.svg\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "tPAaAMeReW",
+            "note_model_uuid": "9d21939e-dda9-11ea-a331-3c970e00903e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "89abeaaa571d4ff786a271d0472c3705-ao-4",
+                "codemirror data flow",
+                "<img src=\"tmpzv4x8pev.png\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-4-Q.svg\">",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-4-A.svg\" />",
+                "<img src=\"89abeaaa571d4ff786a271d0472c3705-ao-O.svg\" />"
+            ],
+            "flags": 0,
+            "guid": "hGsz>d2THY",
+            "note_model_uuid": "9d21939e-dda9-11ea-a331-3c970e00903e",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "basics parts of editor state",
+                "- document<div>- selection</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "JlL?2!@?lz",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "where are extensions kept?",
+                "editor state",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Fz~o=)qPZ2",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "how are extensions provided?",
+                "as values or arrays of such values",
+                "[not sure whether this note makes sense yet]",
+                ""
+            ],
+            "flags": 0,
+            "guid": "d2}H($G!^T",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "address positions in the document with",
+                "plain numbers",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "CrZ+>Z.Rz)",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "plain numbers count",
+                "UTF16 code units",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "wRsK?##8HI",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "uses of document offsets:<div>1. {{c1::track selection}}</div><div>2. {{c2::position changes}}</div><div>3. {{c3::decorate content}}</div><div>and so on</div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "fv&L}%HtK5",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::delete \"23\" and insert at \"0\" at the start}} of doc: \"1234\"<div>{{c2::{changes: [{from: 1, to: 2}, {from: 0, insert: \"0\"}]}::TransactionSpec}}<br></div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "dhI10d?,1A",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "EditorSelection",
+                "holds one or more selection ranges",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "L8B7dMcYLt",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "SelectionRange.empty",
+                "True, when anchor and head are at the same position",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "JP+T$(xu`B",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "SelectionRange.anchor",
+                "<div>The anchor of the range—the side that doesn't move when you extend it.</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Am/jqZ[M22",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "SelectionRange.head",
+                "<div>The head of the range, which is moved when the range is extended.</div>",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "nU0q=,nBK(",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "configuration of a state",
+                "determined by the extensions that are active for that state",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "c<+A&&VFGL",
+            "note_model_uuid": "9325fc44-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::facet}}<div>- {{c2::value associated with a state}}<div>- {{c3::can be influenced by any number of extensions}}</div></div>",
+                ""
+            ],
+            "flags": 0,
+            "guid": "h<+>bsj<w=",
+            "note_model_uuid": "92d41ca8-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "when are facets recomputed?",
+                "only when necessary",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "If^u>7WwZJ",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "advantage of recomputing facets only when necessary?",
+                "you can use an object or array identity test to cheaply check whether a facet changed",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Q#,^A:4d6?",
+            "note_model_uuid": "92d51838-cb99-11ea-9c59-8c705abd0bf4",
+            "tags": []
+        }
+    ]
+}
